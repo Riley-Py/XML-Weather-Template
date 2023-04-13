@@ -90,6 +90,7 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="Fonts\Barlow-Medium.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -101,7 +102,16 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Rain3.gif" />
+    <None Include="Resources\Afternoon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Evening.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Night.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

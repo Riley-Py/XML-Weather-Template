@@ -19,7 +19,8 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
-
+            cityOutput.Text = $"{Form1.days[0].location}";
+            currentOutput.Text = $"{Form1.days[0].currentTemp}";
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)

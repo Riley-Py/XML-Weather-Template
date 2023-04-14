@@ -33,32 +33,12 @@ namespace XMLWeather
         {
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
-            while (reader.Read())
-            {
-
-                // day object
-                Day d = new Day();
-                // fill day object with required data
-                reader.ReadToFollowing("time");
-                d.date = reader.GetAttribute("day");
-
-                reader.ReadToFollowing("temperature");
-                d.tempLow = reader.GetAttribute("min");
-                d.tempHigh = reader.GetAttribute("max");
-
-                
-
-                //if day object not null add to the days list
-                if (d.date != null)
-                {
-                    days.Add(d);
-                }
-            }
-            reader.Close();
         }
 
         private void ExtractCurrent()
         {
+            Day currentDay = new Day();
+            days.Add(currentDay);
             // current info is not included in forecast file so we need to use this file to get it
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/weather?q=Stratford,CA&mode=xml&units=metric&appid=3f2e224b815c0ed45524322e145149f0");
 
@@ -69,6 +49,12 @@ namespace XMLWeather
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
+            days[0].tempHigh = reader.GetAttribute("max");
+            days[0].tempLow = reader.GetAttribute("min");
+            reader.Close();
+
+
+
 
         }
 

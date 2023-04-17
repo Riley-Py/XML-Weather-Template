@@ -23,7 +23,20 @@ namespace XMLWeather
             currentOutput.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].currentTemp))}°";
             highTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh))}°";
             lowTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempLow))}°";
-            dateLabel.Text = DateTime.Now.ToString("dddd");
+            dateLabel.Text = $"Updated as of: {DateTime.Now.ToString("MMMM MM, yyy")}";
+
+            //Temporary (make for loop for the other days
+            switch (Form1.days[0].condition)
+            {
+                case "13d":
+                    condition.Image = Properties.Resources.snow;
+                    break;
+                case "13n":
+                    condition.Image = Properties.Resources.snow;
+                    break;
+
+
+            }
 
         }
 

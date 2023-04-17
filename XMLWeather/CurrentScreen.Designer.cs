@@ -36,6 +36,8 @@
             this.highTemp = new System.Windows.Forms.Label();
             this.lowTemp = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
+            this.condition = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.condition)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -43,7 +45,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Barlow Medium", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(57, 78);
+            this.cityOutput.Location = new System.Drawing.Point(57, 71);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(137, 43);
             this.cityOutput.TabIndex = 22;
@@ -54,7 +56,7 @@
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
             this.currentOutput.Font = new System.Drawing.Font("Barlow Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(93, 135);
+            this.currentOutput.Location = new System.Drawing.Point(93, 126);
             this.currentOutput.Name = "currentOutput";
             this.currentOutput.Size = new System.Drawing.Size(67, 40);
             this.currentOutput.TabIndex = 28;
@@ -100,7 +102,7 @@
             this.highTemp.AutoSize = true;
             this.highTemp.Font = new System.Drawing.Font("Barlow Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highTemp.ForeColor = System.Drawing.Color.Red;
-            this.highTemp.Location = new System.Drawing.Point(155, 189);
+            this.highTemp.Location = new System.Drawing.Point(157, 189);
             this.highTemp.Name = "highTemp";
             this.highTemp.Size = new System.Drawing.Size(25, 26);
             this.highTemp.TabIndex = 43;
@@ -120,18 +122,29 @@
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
+            this.dateLabel.Font = new System.Drawing.Font("Rubik Medium", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
-            this.dateLabel.Location = new System.Drawing.Point(3, 477);
+            this.dateLabel.Location = new System.Drawing.Point(3, 481);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(48, 13);
+            this.dateLabel.Size = new System.Drawing.Size(60, 13);
             this.dateLabel.TabIndex = 45;
             this.dateLabel.Text = "Updated";
+            // 
+            // condition
+            // 
+            this.condition.Location = new System.Drawing.Point(89, 248);
+            this.condition.Name = "condition";
+            this.condition.Size = new System.Drawing.Size(71, 60);
+            this.condition.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.condition.TabIndex = 46;
+            this.condition.TabStop = false;
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.condition);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.lowTemp);
             this.Controls.Add(this.highTemp);
@@ -142,6 +155,7 @@
             this.Controls.Add(this.label5);
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(249, 500);
+            ((System.ComponentModel.ISupportInitialize)(this.condition)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +170,6 @@
         private System.Windows.Forms.Label highTemp;
         private System.Windows.Forms.Label lowTemp;
         private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.PictureBox condition;
     }
 }

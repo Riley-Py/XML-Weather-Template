@@ -36,8 +36,9 @@ namespace XMLWeather
 
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
-            reader.ReadToFollowing("symbol");
-            days[0].condition = reader.GetAttribute("var");
+            
+
+            
 
         }
 
@@ -56,6 +57,11 @@ namespace XMLWeather
             days[0].currentTemp = reader.GetAttribute("value");
             days[0].tempHigh = reader.GetAttribute("max");
             days[0].tempLow = reader.GetAttribute("min");
+
+            reader.ReadToFollowing("humidity");
+            days[0].humidity = reader.GetAttribute("value");
+
+
             reader.Close();
 
 

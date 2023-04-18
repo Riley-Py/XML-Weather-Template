@@ -25,7 +25,9 @@ namespace XMLWeather
             lowTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempLow))}°";
             dateLabel.Text = $"Updated as of: {DateTime.Now.ToString("MMMM MM, yyy")}";
 
-            //Temporary (make for loop for the other days
+
+
+            //Temporary (make for loop for the other days)
             switch (Form1.days[0].condition)
             {
                 case "13d":
@@ -34,6 +36,43 @@ namespace XMLWeather
                 case "13n":
                     condition.Image = Properties.Resources.snow;
                     break;
+                case "02d":
+                    condition.Image = Properties.Resources.partialClouds;
+                    break;
+                case "02n":
+                    condition.Image = Properties.Resources.partialCloudsNight;
+                    break;
+                case "03d":
+                    condition.Image = Properties.Resources.clouds;
+                    break;
+                case "03n":
+                    condition.Image = Properties.Resources.clouds;
+                    break;
+                case "04d":
+                    condition.Image = Properties.Resources.clouds;
+                    break;
+                case "04n":
+                    condition.Image = Properties.Resources.clouds;
+                    break;
+                case "10d":
+                    condition.Image = Properties.Resources.rainySun;
+                    break;
+                case "10n":
+                    condition.Image = Properties.Resources.rainyNight;
+                    break;
+                case "11d":
+                    condition.Image = Properties.Resources.thunderStorm;
+                    break;
+                case "11n":
+                    condition.Image = Properties.Resources.thunderStorm;
+                    break;
+                case "50d":
+                    condition.Image = Properties.Resources.mist;
+                    break;
+                case "50n":
+                    condition.Image = Properties.Resources.mist;
+                    break;
+
 
 
             }

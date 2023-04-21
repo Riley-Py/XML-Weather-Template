@@ -23,7 +23,10 @@ namespace XMLWeather
             currentOutput.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].currentTemp))}°";
             highTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh))}°";
             lowTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempLow))}°";
-            dateLabel.Text = $"Updated as of: {DateTime.Now.ToString("MMMM MM, yyy")}";
+            dateLabel.Text = $"Updated as of: {DateTime.Now.ToString("d")}";
+
+            humidityMeasure.Value = int.Parse(Form1.days[0].humidity);
+            humidityValue.Text = $"{Form1.days[0].humidity} %";
 
 
 

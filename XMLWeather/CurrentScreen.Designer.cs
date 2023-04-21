@@ -39,6 +39,7 @@
             this.condition = new System.Windows.Forms.PictureBox();
             this.humidityLabel = new System.Windows.Forms.Label();
             this.humidityMeasure = new System.Windows.Forms.ProgressBar();
+            this.humidityValue = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.condition)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,11 +57,11 @@
             // currentOutput
             // 
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
-            this.currentOutput.Font = new System.Drawing.Font("Barlow Medium", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentOutput.Font = new System.Drawing.Font("Barlow Medium", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(100, 126);
+            this.currentOutput.Location = new System.Drawing.Point(102, 126);
             this.currentOutput.Name = "currentOutput";
-            this.currentOutput.Size = new System.Drawing.Size(67, 40);
+            this.currentOutput.Size = new System.Drawing.Size(67, 50);
             this.currentOutput.TabIndex = 28;
             this.currentOutput.Text = "Temperature";
             this.currentOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -102,6 +103,7 @@
             // highTemp
             // 
             this.highTemp.AutoSize = true;
+            this.highTemp.BackColor = System.Drawing.Color.Transparent;
             this.highTemp.Font = new System.Drawing.Font("Barlow Medium", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highTemp.ForeColor = System.Drawing.Color.Red;
             this.highTemp.Location = new System.Drawing.Point(164, 189);
@@ -113,6 +115,7 @@
             // lowTemp
             // 
             this.lowTemp.AutoSize = true;
+            this.lowTemp.BackColor = System.Drawing.Color.Transparent;
             this.lowTemp.Font = new System.Drawing.Font("Barlow Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowTemp.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.lowTemp.Location = new System.Drawing.Point(66, 189);
@@ -126,7 +129,7 @@
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Rubik Medium", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
-            this.dateLabel.Location = new System.Drawing.Point(3, 524);
+            this.dateLabel.Location = new System.Drawing.Point(3, 574);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(60, 13);
             this.dateLabel.TabIndex = 45;
@@ -144,26 +147,38 @@
             // humidityLabel
             // 
             this.humidityLabel.AutoSize = true;
-            this.humidityLabel.Font = new System.Drawing.Font("Rubik Medium", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidityLabel.Font = new System.Drawing.Font("Rubik Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityLabel.ForeColor = System.Drawing.Color.White;
             this.humidityLabel.Location = new System.Drawing.Point(10, 336);
             this.humidityLabel.Name = "humidityLabel";
-            this.humidityLabel.Size = new System.Drawing.Size(71, 15);
+            this.humidityLabel.Size = new System.Drawing.Size(92, 20);
             this.humidityLabel.TabIndex = 47;
             this.humidityLabel.Text = "Humidity:";
             // 
             // humidityMeasure
             // 
-            this.humidityMeasure.Location = new System.Drawing.Point(87, 336);
+            this.humidityMeasure.Location = new System.Drawing.Point(108, 333);
             this.humidityMeasure.Name = "humidityMeasure";
             this.humidityMeasure.Size = new System.Drawing.Size(102, 23);
             this.humidityMeasure.TabIndex = 48;
+            // 
+            // humidityValue
+            // 
+            this.humidityValue.AutoSize = true;
+            this.humidityValue.Font = new System.Drawing.Font("Rubik Medium", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.humidityValue.ForeColor = System.Drawing.Color.White;
+            this.humidityValue.Location = new System.Drawing.Point(132, 371);
+            this.humidityValue.Name = "humidityValue";
+            this.humidityValue.Size = new System.Drawing.Size(57, 19);
+            this.humidityValue.TabIndex = 49;
+            this.humidityValue.Text = "label1";
             // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.humidityValue);
             this.Controls.Add(this.humidityMeasure);
             this.Controls.Add(this.humidityLabel);
             this.Controls.Add(this.condition);
@@ -176,7 +191,7 @@
             this.Controls.Add(this.currentOutput);
             this.Controls.Add(this.label5);
             this.Name = "CurrentScreen";
-            this.Size = new System.Drawing.Size(249, 546);
+            this.Size = new System.Drawing.Size(249, 600);
             ((System.ComponentModel.ISupportInitialize)(this.condition)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -195,5 +210,6 @@
         private System.Windows.Forms.PictureBox condition;
         private System.Windows.Forms.Label humidityLabel;
         private System.Windows.Forms.ProgressBar humidityMeasure;
+        private System.Windows.Forms.Label humidityValue;
     }
 }

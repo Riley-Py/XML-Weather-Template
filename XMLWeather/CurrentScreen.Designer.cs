@@ -41,6 +41,9 @@
             this.sunriseInfoLabel = new System.Windows.Forms.Label();
             this.sunsetInfoLabel = new System.Windows.Forms.Label();
             this.sunsetLabel = new System.Windows.Forms.Label();
+            this.todayLabel = new System.Windows.Forms.Label();
+            this.underline = new System.Windows.Forms.Label();
+            this.searchLabel = new System.Windows.Forms.Label();
             this.sunsetIcon = new System.Windows.Forms.PictureBox();
             this.sunriseIcon = new System.Windows.Forms.PictureBox();
             this.condition = new System.Windows.Forms.PictureBox();
@@ -54,7 +57,7 @@
             this.cityOutput.BackColor = System.Drawing.Color.Transparent;
             this.cityOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityOutput.ForeColor = System.Drawing.Color.White;
-            this.cityOutput.Location = new System.Drawing.Point(64, 71);
+            this.cityOutput.Location = new System.Drawing.Point(84, 70);
             this.cityOutput.Name = "cityOutput";
             this.cityOutput.Size = new System.Drawing.Size(137, 43);
             this.cityOutput.TabIndex = 22;
@@ -65,7 +68,7 @@
             this.currentOutput.BackColor = System.Drawing.Color.Transparent;
             this.currentOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentOutput.ForeColor = System.Drawing.Color.White;
-            this.currentOutput.Location = new System.Drawing.Point(102, 126);
+            this.currentOutput.Location = new System.Drawing.Point(122, 125);
             this.currentOutput.Name = "currentOutput";
             this.currentOutput.Size = new System.Drawing.Size(67, 50);
             this.currentOutput.TabIndex = 28;
@@ -75,11 +78,11 @@
             // forecastLabel
             // 
             this.forecastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.forecastLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forecastLabel.Font = new System.Drawing.Font("Rubik Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forecastLabel.ForeColor = System.Drawing.Color.White;
-            this.forecastLabel.Location = new System.Drawing.Point(148, 14);
+            this.forecastLabel.Location = new System.Drawing.Point(94, 13);
             this.forecastLabel.Name = "forecastLabel";
-            this.forecastLabel.Size = new System.Drawing.Size(83, 28);
+            this.forecastLabel.Size = new System.Drawing.Size(79, 28);
             this.forecastLabel.TabIndex = 41;
             this.forecastLabel.Text = "7 Day";
             this.forecastLabel.Click += new System.EventHandler(this.forecastLabel_Click);
@@ -90,7 +93,7 @@
             this.highTemp.BackColor = System.Drawing.Color.Transparent;
             this.highTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.highTemp.ForeColor = System.Drawing.Color.Red;
-            this.highTemp.Location = new System.Drawing.Point(164, 189);
+            this.highTemp.Location = new System.Drawing.Point(184, 188);
             this.highTemp.Name = "highTemp";
             this.highTemp.Size = new System.Drawing.Size(25, 24);
             this.highTemp.TabIndex = 43;
@@ -102,7 +105,7 @@
             this.lowTemp.BackColor = System.Drawing.Color.Transparent;
             this.lowTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lowTemp.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.lowTemp.Location = new System.Drawing.Point(66, 189);
+            this.lowTemp.Location = new System.Drawing.Point(86, 188);
             this.lowTemp.Name = "lowTemp";
             this.lowTemp.Size = new System.Drawing.Size(21, 24);
             this.lowTemp.TabIndex = 44;
@@ -113,7 +116,7 @@
             this.dateLabel.AutoSize = true;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
-            this.dateLabel.Location = new System.Drawing.Point(3, 574);
+            this.dateLabel.Location = new System.Drawing.Point(23, 573);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(55, 13);
             this.dateLabel.TabIndex = 45;
@@ -124,7 +127,7 @@
             this.humidityLabel.AutoSize = true;
             this.humidityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityLabel.ForeColor = System.Drawing.Color.White;
-            this.humidityLabel.Location = new System.Drawing.Point(10, 336);
+            this.humidityLabel.Location = new System.Drawing.Point(30, 335);
             this.humidityLabel.Name = "humidityLabel";
             this.humidityLabel.Size = new System.Drawing.Size(83, 20);
             this.humidityLabel.TabIndex = 47;
@@ -132,7 +135,7 @@
             // 
             // humidityMeasure
             // 
-            this.humidityMeasure.Location = new System.Drawing.Point(108, 333);
+            this.humidityMeasure.Location = new System.Drawing.Point(128, 332);
             this.humidityMeasure.Name = "humidityMeasure";
             this.humidityMeasure.Size = new System.Drawing.Size(102, 23);
             this.humidityMeasure.TabIndex = 48;
@@ -142,7 +145,7 @@
             this.humidityValue.AutoSize = true;
             this.humidityValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.humidityValue.ForeColor = System.Drawing.Color.White;
-            this.humidityValue.Location = new System.Drawing.Point(132, 371);
+            this.humidityValue.Location = new System.Drawing.Point(152, 370);
             this.humidityValue.Name = "humidityValue";
             this.humidityValue.Size = new System.Drawing.Size(52, 18);
             this.humidityValue.TabIndex = 49;
@@ -153,7 +156,7 @@
             this.sunriseLabel.AutoSize = true;
             this.sunriseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunriseLabel.ForeColor = System.Drawing.Color.White;
-            this.sunriseLabel.Location = new System.Drawing.Point(10, 420);
+            this.sunriseLabel.Location = new System.Drawing.Point(30, 419);
             this.sunriseLabel.Name = "sunriseLabel";
             this.sunriseLabel.Size = new System.Drawing.Size(75, 20);
             this.sunriseLabel.TabIndex = 50;
@@ -164,7 +167,7 @@
             this.sunriseInfoLabel.AutoSize = true;
             this.sunriseInfoLabel.Font = new System.Drawing.Font("Rubik Medium", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunriseInfoLabel.ForeColor = System.Drawing.Color.White;
-            this.sunriseInfoLabel.Location = new System.Drawing.Point(93, 427);
+            this.sunriseInfoLabel.Location = new System.Drawing.Point(113, 426);
             this.sunriseInfoLabel.Name = "sunriseInfoLabel";
             this.sunriseInfoLabel.Size = new System.Drawing.Size(39, 13);
             this.sunriseInfoLabel.TabIndex = 52;
@@ -175,7 +178,7 @@
             this.sunsetInfoLabel.AutoSize = true;
             this.sunsetInfoLabel.Font = new System.Drawing.Font("Rubik Medium", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunsetInfoLabel.ForeColor = System.Drawing.Color.White;
-            this.sunsetInfoLabel.Location = new System.Drawing.Point(92, 472);
+            this.sunsetInfoLabel.Location = new System.Drawing.Point(112, 471);
             this.sunsetInfoLabel.Name = "sunsetInfoLabel";
             this.sunsetInfoLabel.Size = new System.Drawing.Size(39, 13);
             this.sunsetInfoLabel.TabIndex = 53;
@@ -186,17 +189,52 @@
             this.sunsetLabel.AutoSize = true;
             this.sunsetLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sunsetLabel.ForeColor = System.Drawing.Color.White;
-            this.sunsetLabel.Location = new System.Drawing.Point(11, 467);
+            this.sunsetLabel.Location = new System.Drawing.Point(31, 466);
             this.sunsetLabel.Name = "sunsetLabel";
             this.sunsetLabel.Size = new System.Drawing.Size(71, 20);
             this.sunsetLabel.TabIndex = 54;
             this.sunsetLabel.Text = "Sunset:";
             // 
+            // todayLabel
+            // 
+            this.todayLabel.BackColor = System.Drawing.Color.Transparent;
+            this.todayLabel.Font = new System.Drawing.Font("Rubik Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayLabel.ForeColor = System.Drawing.Color.White;
+            this.todayLabel.Location = new System.Drawing.Point(6, 10);
+            this.todayLabel.Name = "todayLabel";
+            this.todayLabel.Size = new System.Drawing.Size(79, 28);
+            this.todayLabel.TabIndex = 56;
+            this.todayLabel.Text = "Today";
+            // 
+            // underline
+            // 
+            this.underline.BackColor = System.Drawing.Color.Transparent;
+            this.underline.Font = new System.Drawing.Font("Rubik Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.underline.ForeColor = System.Drawing.Color.White;
+            this.underline.Location = new System.Drawing.Point(20, 20);
+            this.underline.Name = "underline";
+            this.underline.Size = new System.Drawing.Size(48, 29);
+            this.underline.TabIndex = 64;
+            this.underline.Text = "____________________________";
+            this.underline.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // searchLabel
+            // 
+            this.searchLabel.BackColor = System.Drawing.Color.Transparent;
+            this.searchLabel.Font = new System.Drawing.Font("Rubik Medium", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchLabel.ForeColor = System.Drawing.Color.White;
+            this.searchLabel.Location = new System.Drawing.Point(181, 13);
+            this.searchLabel.Name = "searchLabel";
+            this.searchLabel.Size = new System.Drawing.Size(91, 28);
+            this.searchLabel.TabIndex = 65;
+            this.searchLabel.Text = "Search";
+            this.searchLabel.Click += new System.EventHandler(this.searchLabel_Click);
+            // 
             // sunsetIcon
             // 
             this.sunsetIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.sunsetIcon.Image = global::XMLWeather.Properties.Resources.sunset;
-            this.sunsetIcon.Location = new System.Drawing.Point(197, 467);
+            this.sunsetIcon.Location = new System.Drawing.Point(217, 466);
             this.sunsetIcon.Name = "sunsetIcon";
             this.sunsetIcon.Size = new System.Drawing.Size(37, 33);
             this.sunsetIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -207,7 +245,7 @@
             // 
             this.sunriseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.sunriseIcon.Image = global::XMLWeather.Properties.Resources.sunrise;
-            this.sunriseIcon.Location = new System.Drawing.Point(197, 417);
+            this.sunriseIcon.Location = new System.Drawing.Point(217, 416);
             this.sunriseIcon.Name = "sunriseIcon";
             this.sunriseIcon.Size = new System.Drawing.Size(37, 33);
             this.sunriseIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -216,7 +254,7 @@
             // 
             // condition
             // 
-            this.condition.Location = new System.Drawing.Point(92, 234);
+            this.condition.Location = new System.Drawing.Point(112, 233);
             this.condition.Name = "condition";
             this.condition.Size = new System.Drawing.Size(71, 60);
             this.condition.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,6 +266,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.searchLabel);
+            this.Controls.Add(this.todayLabel);
             this.Controls.Add(this.sunsetIcon);
             this.Controls.Add(this.sunsetLabel);
             this.Controls.Add(this.sunsetInfoLabel);
@@ -244,8 +284,9 @@
             this.Controls.Add(this.forecastLabel);
             this.Controls.Add(this.cityOutput);
             this.Controls.Add(this.currentOutput);
+            this.Controls.Add(this.underline);
             this.Name = "CurrentScreen";
-            this.Size = new System.Drawing.Size(249, 600);
+            this.Size = new System.Drawing.Size(291, 600);
             ((System.ComponentModel.ISupportInitialize)(this.sunsetIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sunriseIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.condition)).EndInit();
@@ -271,5 +312,8 @@
         private System.Windows.Forms.Label sunsetInfoLabel;
         private System.Windows.Forms.Label sunsetLabel;
         private System.Windows.Forms.PictureBox sunsetIcon;
+        private System.Windows.Forms.Label todayLabel;
+        private System.Windows.Forms.Label underline;
+        private System.Windows.Forms.Label searchLabel;
     }
 }

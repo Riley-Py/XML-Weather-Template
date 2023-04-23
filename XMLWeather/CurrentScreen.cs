@@ -19,6 +19,7 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            //Converts from UTC to EST and takes the substring to get the time only
             string sunriseData = Convert.ToString(DateTime.Parse(Form1.days[0].sunrise).ToLocalTime()).Substring(10);
             string sunsetData = Convert.ToString(DateTime.Parse(Form1.days[0].sunset).ToLocalTime()).Substring(10);
 
@@ -26,17 +27,13 @@ namespace XMLWeather
             currentOutput.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].currentTemp))}°";
             highTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh))}°";
             lowTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempLow))}°";
-            dateLabel.Text = $"Updated as of: {DateTime.Now.ToString("d")}";
+            dateLabel.Text = $"Updated as of: {DateTime.Parse(Form1.days[0].lastUpdate).ToLocalTime()}";
 
             humidityMeasure.Value = int.Parse(Form1.days[0].humidity);
             humidityValue.Text = $"{Form1.days[0].humidity} %";
 
             sunriseInfoLabel.Text = $"{sunriseData}";
             sunsetInfoLabel.Text = $"{sunsetData}";
-        
-
-
-
 
             //Temporary (make for loop for the other days)
             switch (Form1.days[0].condition)
@@ -83,8 +80,12 @@ namespace XMLWeather
                 case "50n":
                     condition.Image = Properties.Resources.mist;
                     break;
-
-
+                case "01d":
+                    condition.Image = Properties.Resources.sunny;
+                    break;
+                case "01n":
+                    condition.Image = Properties.Resources.moon;
+                    break;
 
             }
 
@@ -92,11 +93,13 @@ namespace XMLWeather
 
         private void forecastLabel_Click(object sender, EventArgs e)
         {
-            Form f = this.FindForm();
-            f.Controls.Remove(this);
+            Form1.ChangeScreen(this, new ForecastScreen());
+        }
 
-            ForecastScreen fs = new ForecastScreen();
-            f.Controls.Add(fs);
+        private void searchLabel_Click(object sender, EventArgs e)
+        {
+            Form1.ChangeScreen(this, new SearchScreen());
+
         }
     }
 }

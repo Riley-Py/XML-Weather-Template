@@ -16,6 +16,8 @@ namespace XMLWeather
         //list to hold day objects
         public static List<Day> days = new List<Day>();
 
+        int timeStart = 11;
+
 
         public Form1()
         {
@@ -23,7 +25,7 @@ namespace XMLWeather
 
             ExtractForecast();
             ExtractCurrent();
-            
+
             // open weather screen for todays weather
             CurrentScreen cs = new CurrentScreen();
             this.Controls.Add(cs);
@@ -31,13 +33,13 @@ namespace XMLWeather
 
         private void ExtractForecast()
         {
-            
+
 
             XmlReader reader = XmlReader.Create("http://api.openweathermap.org/data/2.5/forecast/daily?q=Stratford,CA&mode=xml&units=metric&cnt=7&appid=3f2e224b815c0ed45524322e145149f0");
 
-            
 
-            
+
+
 
         }
 
@@ -55,6 +57,12 @@ namespace XMLWeather
 
             reader.ReadToFollowing("city");
             days[0].location = reader.GetAttribute("name");
+
+
+            reader.ReadToFollowing("sun");
+            days[0].sunrise = reader.GetAttribute("rise").Substring(timeStart);
+            days[0].sunset = reader.GetAttribute("set").Substring(timeStart);
+
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");

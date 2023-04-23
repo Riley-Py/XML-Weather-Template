@@ -19,6 +19,9 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            string sunriseData = Convert.ToString(DateTime.Parse(Form1.days[0].sunrise).ToLocalTime()).Substring(10);
+            string sunsetData = Convert.ToString(DateTime.Parse(Form1.days[0].sunset).ToLocalTime()).Substring(10);
+
             cityOutput.Text = $"{Form1.days[0].location}";
             currentOutput.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].currentTemp))}°";
             highTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh))}°";
@@ -27,6 +30,11 @@ namespace XMLWeather
 
             humidityMeasure.Value = int.Parse(Form1.days[0].humidity);
             humidityValue.Text = $"{Form1.days[0].humidity} %";
+
+            sunriseInfoLabel.Text = $"{sunriseData}";
+            sunsetInfoLabel.Text = $"{sunsetData}";
+        
+
 
 
 

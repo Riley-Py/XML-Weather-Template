@@ -9,6 +9,13 @@ using System.Windows.Forms;
 using System.Net;
 using System.Xml;
 
+/*
+ * Author: Riley Cant
+ * Class: ICS4U
+ * Project: A weather application using openweathermap.org API
+ * Last date of modification: 23/04/2023
+ */
+
 namespace XMLWeather
 {
     public partial class Form1 : Form

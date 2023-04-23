@@ -23,6 +23,7 @@ namespace XMLWeather
             string sunriseData = Convert.ToString(DateTime.Parse(Form1.days[0].sunrise).ToLocalTime()).Substring(10);
             string sunsetData = Convert.ToString(DateTime.Parse(Form1.days[0].sunset).ToLocalTime()).Substring(10);
 
+            #region displays all of the information scrapped in a human-readable way
             cityOutput.Text = $"{Form1.days[0].location}";
             currentOutput.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].currentTemp))}°";
             highTemp.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].tempHigh))}°";
@@ -88,6 +89,7 @@ namespace XMLWeather
                     break;
 
             }
+            #endregion
 
         }
 

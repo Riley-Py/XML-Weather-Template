@@ -180,8 +180,13 @@
   <ItemGroup>
     <None Include="Resources\cloudBackground.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Reference Images\" />
+    <Content Include="Reference Images\ref1.png" />
+    <Content Include="Reference Images\ref2.png" />
+    <Content Include="Reference Images\ref3.png" />
+    <Content Include="Reference Images\ref4.png" />
+    <Content Include="Reference Images\ref5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

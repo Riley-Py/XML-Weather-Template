@@ -12,7 +12,7 @@ using System.Xml;
 /*
  * Author: Riley Cant
  * Class: ICS4U
- * Project: A weather application using openweathermap.org API
+ * Project: A weather application using openweathermap.org API and XML files
  * Last date of modification: 23/04/2023
  */
 

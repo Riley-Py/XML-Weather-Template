@@ -28,6 +28,8 @@ namespace XMLWeather
             List<Label> highExpectedTemps = new List<Label> { high2, high3, high4, high5, high6, high7 };
             List<Label> lowExpectedTemps = new List<Label> { low2, low3, low4, low5, low6, low7 };
 
+            int weatherBackgroundValue = int.Parse(Form1.days[4].number);
+
             #region puts all of the information form the days list into the appropiate control
             for (int e = 1; e < 7; e++)
             {
@@ -88,6 +90,26 @@ namespace XMLWeather
                     case "01n":
                         conditions[e - 1].Image = Properties.Resources.moon;
                         break;
+                }
+                if (weatherBackgroundValue < 300)
+                {
+                    this.BackgroundImage = Properties.Resources.thunderstormBackground;
+                }
+                else if (weatherBackgroundValue < 500 && weatherBackgroundValue > 300)
+                {
+                    this.BackgroundImage = Properties.Resources.drizzleBackground;
+                }
+                else if (weatherBackgroundValue > 500 && weatherBackgroundValue < 600)
+                {
+                    this.BackgroundImage = Properties.Resources.rainBackground;
+                }
+                else if (weatherBackgroundValue > 600 && weatherBackgroundValue < 800)
+                {
+                    this.BackgroundImage = Properties.Resources.snowBackground;
+                }
+                else
+                {
+                    this.BackgroundImage = Properties.Resources.cloudBackground;
                 }
 
             }

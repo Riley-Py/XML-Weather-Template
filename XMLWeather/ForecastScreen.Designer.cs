@@ -120,6 +120,7 @@
             // day2Label
             // 
             this.day2Label.AutoSize = true;
+            this.day2Label.BackColor = System.Drawing.Color.Transparent;
             this.day2Label.Font = new System.Drawing.Font("Barlow Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day2Label.ForeColor = System.Drawing.Color.White;
             this.day2Label.Location = new System.Drawing.Point(94, 106);
@@ -131,6 +132,7 @@
             // day3Label
             // 
             this.day3Label.AutoSize = true;
+            this.day3Label.BackColor = System.Drawing.Color.Transparent;
             this.day3Label.Font = new System.Drawing.Font("Barlow Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day3Label.ForeColor = System.Drawing.Color.White;
             this.day3Label.Location = new System.Drawing.Point(94, 199);
@@ -142,6 +144,7 @@
             // day4Label
             // 
             this.day4Label.AutoSize = true;
+            this.day4Label.BackColor = System.Drawing.Color.Transparent;
             this.day4Label.Font = new System.Drawing.Font("Barlow Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day4Label.ForeColor = System.Drawing.Color.White;
             this.day4Label.Location = new System.Drawing.Point(94, 280);
@@ -153,6 +156,7 @@
             // day5Label
             // 
             this.day5Label.AutoSize = true;
+            this.day5Label.BackColor = System.Drawing.Color.Transparent;
             this.day5Label.Font = new System.Drawing.Font("Barlow Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day5Label.ForeColor = System.Drawing.Color.White;
             this.day5Label.Location = new System.Drawing.Point(94, 370);
@@ -164,6 +168,7 @@
             // day6Label
             // 
             this.day6Label.AutoSize = true;
+            this.day6Label.BackColor = System.Drawing.Color.Transparent;
             this.day6Label.Font = new System.Drawing.Font("Barlow Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day6Label.ForeColor = System.Drawing.Color.White;
             this.day6Label.Location = new System.Drawing.Point(94, 457);
@@ -175,6 +180,7 @@
             // day7Label
             // 
             this.day7Label.AutoSize = true;
+            this.day7Label.BackColor = System.Drawing.Color.Transparent;
             this.day7Label.Font = new System.Drawing.Font("Barlow Medium", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.day7Label.ForeColor = System.Drawing.Color.White;
             this.day7Label.Location = new System.Drawing.Point(94, 537);
@@ -186,6 +192,7 @@
             // expected2Label
             // 
             this.expected2Label.AutoSize = true;
+            this.expected2Label.BackColor = System.Drawing.Color.Transparent;
             this.expected2Label.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expected2Label.ForeColor = System.Drawing.Color.White;
             this.expected2Label.Location = new System.Drawing.Point(209, 89);
@@ -197,6 +204,7 @@
             // high2
             // 
             this.high2.AutoSize = true;
+            this.high2.BackColor = System.Drawing.Color.Transparent;
             this.high2.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.high2.ForeColor = System.Drawing.Color.Red;
             this.high2.Location = new System.Drawing.Point(178, 116);
@@ -208,6 +216,7 @@
             // low2
             // 
             this.low2.AutoSize = true;
+            this.low2.BackColor = System.Drawing.Color.Transparent;
             this.low2.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.low2.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.low2.Location = new System.Drawing.Point(243, 116);
@@ -219,6 +228,7 @@
             // low3
             // 
             this.low3.AutoSize = true;
+            this.low3.BackColor = System.Drawing.Color.Transparent;
             this.low3.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.low3.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.low3.Location = new System.Drawing.Point(243, 202);
@@ -230,6 +240,7 @@
             // high3
             // 
             this.high3.AutoSize = true;
+            this.high3.BackColor = System.Drawing.Color.Transparent;
             this.high3.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.high3.ForeColor = System.Drawing.Color.Red;
             this.high3.Location = new System.Drawing.Point(178, 202);
@@ -241,6 +252,7 @@
             // expected3Label
             // 
             this.expected3Label.AutoSize = true;
+            this.expected3Label.BackColor = System.Drawing.Color.Transparent;
             this.expected3Label.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expected3Label.ForeColor = System.Drawing.Color.White;
             this.expected3Label.Location = new System.Drawing.Point(209, 175);
@@ -252,6 +264,7 @@
             // low4
             // 
             this.low4.AutoSize = true;
+            this.low4.BackColor = System.Drawing.Color.Transparent;
             this.low4.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.low4.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.low4.Location = new System.Drawing.Point(243, 283);
@@ -263,6 +276,7 @@
             // high4
             // 
             this.high4.AutoSize = true;
+            this.high4.BackColor = System.Drawing.Color.Transparent;
             this.high4.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.high4.ForeColor = System.Drawing.Color.Red;
             this.high4.Location = new System.Drawing.Point(178, 283);
@@ -274,6 +288,7 @@
             // expected4Label
             // 
             this.expected4Label.AutoSize = true;
+            this.expected4Label.BackColor = System.Drawing.Color.Transparent;
             this.expected4Label.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expected4Label.ForeColor = System.Drawing.Color.White;
             this.expected4Label.Location = new System.Drawing.Point(209, 256);
@@ -285,6 +300,7 @@
             // low7
             // 
             this.low7.AutoSize = true;
+            this.low7.BackColor = System.Drawing.Color.Transparent;
             this.low7.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.low7.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.low7.Location = new System.Drawing.Point(243, 540);
@@ -296,6 +312,7 @@
             // high7
             // 
             this.high7.AutoSize = true;
+            this.high7.BackColor = System.Drawing.Color.Transparent;
             this.high7.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.high7.ForeColor = System.Drawing.Color.Red;
             this.high7.Location = new System.Drawing.Point(178, 540);
@@ -307,6 +324,7 @@
             // expected7Label
             // 
             this.expected7Label.AutoSize = true;
+            this.expected7Label.BackColor = System.Drawing.Color.Transparent;
             this.expected7Label.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expected7Label.ForeColor = System.Drawing.Color.White;
             this.expected7Label.Location = new System.Drawing.Point(209, 509);
@@ -318,6 +336,7 @@
             // low6
             // 
             this.low6.AutoSize = true;
+            this.low6.BackColor = System.Drawing.Color.Transparent;
             this.low6.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.low6.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.low6.Location = new System.Drawing.Point(243, 459);
@@ -329,6 +348,7 @@
             // high6
             // 
             this.high6.AutoSize = true;
+            this.high6.BackColor = System.Drawing.Color.Transparent;
             this.high6.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.high6.ForeColor = System.Drawing.Color.Red;
             this.high6.Location = new System.Drawing.Point(178, 459);
@@ -340,6 +360,7 @@
             // expected6Label
             // 
             this.expected6Label.AutoSize = true;
+            this.expected6Label.BackColor = System.Drawing.Color.Transparent;
             this.expected6Label.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expected6Label.ForeColor = System.Drawing.Color.White;
             this.expected6Label.Location = new System.Drawing.Point(209, 421);
@@ -351,6 +372,7 @@
             // low5
             // 
             this.low5.AutoSize = true;
+            this.low5.BackColor = System.Drawing.Color.Transparent;
             this.low5.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.low5.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.low5.Location = new System.Drawing.Point(243, 373);
@@ -362,6 +384,7 @@
             // high5
             // 
             this.high5.AutoSize = true;
+            this.high5.BackColor = System.Drawing.Color.Transparent;
             this.high5.Font = new System.Drawing.Font("Barlow Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.high5.ForeColor = System.Drawing.Color.Red;
             this.high5.Location = new System.Drawing.Point(178, 373);
@@ -373,6 +396,7 @@
             // expected5Label
             // 
             this.expected5Label.AutoSize = true;
+            this.expected5Label.BackColor = System.Drawing.Color.Transparent;
             this.expected5Label.Font = new System.Drawing.Font("Barlow Medium", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expected5Label.ForeColor = System.Drawing.Color.White;
             this.expected5Label.Location = new System.Drawing.Point(209, 337);
@@ -383,6 +407,7 @@
             // 
             // day7Condition
             // 
+            this.day7Condition.BackColor = System.Drawing.Color.Transparent;
             this.day7Condition.Location = new System.Drawing.Point(12, 518);
             this.day7Condition.Name = "day7Condition";
             this.day7Condition.Size = new System.Drawing.Size(54, 50);
@@ -392,6 +417,7 @@
             // 
             // day6Condition
             // 
+            this.day6Condition.BackColor = System.Drawing.Color.Transparent;
             this.day6Condition.Location = new System.Drawing.Point(12, 433);
             this.day6Condition.Name = "day6Condition";
             this.day6Condition.Size = new System.Drawing.Size(54, 50);
@@ -401,6 +427,7 @@
             // 
             // day5Condition
             // 
+            this.day5Condition.BackColor = System.Drawing.Color.Transparent;
             this.day5Condition.Location = new System.Drawing.Point(12, 346);
             this.day5Condition.Name = "day5Condition";
             this.day5Condition.Size = new System.Drawing.Size(54, 50);
@@ -410,6 +437,7 @@
             // 
             // day4Condition
             // 
+            this.day4Condition.BackColor = System.Drawing.Color.Transparent;
             this.day4Condition.Location = new System.Drawing.Point(12, 256);
             this.day4Condition.Name = "day4Condition";
             this.day4Condition.Size = new System.Drawing.Size(54, 50);
@@ -419,6 +447,7 @@
             // 
             // day3Condition
             // 
+            this.day3Condition.BackColor = System.Drawing.Color.Transparent;
             this.day3Condition.Location = new System.Drawing.Point(12, 175);
             this.day3Condition.Name = "day3Condition";
             this.day3Condition.Size = new System.Drawing.Size(54, 50);
@@ -428,6 +457,7 @@
             // 
             // day2Condition
             // 
+            this.day2Condition.BackColor = System.Drawing.Color.Transparent;
             this.day2Condition.Location = new System.Drawing.Point(12, 89);
             this.day2Condition.Name = "day2Condition";
             this.day2Condition.Size = new System.Drawing.Size(54, 50);

@@ -14,6 +14,7 @@ using System.Xml;
  * Class: ICS4U
  * Project: A weather application using openweathermap.org API and XML files
  * Last date of modification: 23/04/2023
+ * NOTE: Install the fonts or else the formatting gets all messed up.  I'll have images for reference as to what the program should look like with fonts installed
  */
 
 namespace XMLWeather
@@ -71,7 +72,14 @@ namespace XMLWeather
             reader.ReadToFollowing("humidity");
             days[0].humidity = reader.GetAttribute("value");
 
+            reader.ReadToFollowing("speed");
+            days[0].windSpeed = reader.GetAttribute("value");
+
+            reader.ReadToFollowing("direction");
+            days[0].windDirection = reader.GetAttribute("name");       
+
             reader.ReadToFollowing("weather");
+            days[0].number = reader.GetAttribute("number");
             days[0].condition = reader.GetAttribute("icon");
 
             reader.ReadToFollowing("lastupdate");
@@ -107,6 +115,7 @@ namespace XMLWeather
 
                 reader.ReadToFollowing("symbol");
                 day.condition = reader.GetAttribute("var");
+                day.number = reader.GetAttribute("number");
 
                 reader.ReadToFollowing("temperature");
                 day.currentTemp = reader.GetAttribute("day");

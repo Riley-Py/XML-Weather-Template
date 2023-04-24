@@ -23,6 +23,8 @@ namespace XMLWeather
             string sunriseData = Convert.ToString(DateTime.Parse(Form1.days[0].sunrise).ToLocalTime()).Substring(10);
             string sunsetData = Convert.ToString(DateTime.Parse(Form1.days[0].sunset).ToLocalTime()).Substring(10);
 
+            int weatherBackgroundValue = int.Parse(Form1.days[0].number);
+
             #region displays all of the information scrapped in a human-readable way
             cityOutput.Text = $"{Form1.days[0].location}";
             currentOutput.Text = $"{Math.Round(Convert.ToDecimal(Form1.days[0].currentTemp))}°";
@@ -33,8 +35,31 @@ namespace XMLWeather
             humidityMeasure.Value = int.Parse(Form1.days[0].humidity);
             humidityValue.Text = $"{Form1.days[0].humidity} %";
 
+            windValueLabel.Text = $"{Form1.days[0].windSpeed} m/s {Form1.days[0].windDirection}";
+
             sunriseInfoLabel.Text = $"{sunriseData}";
             sunsetInfoLabel.Text = $"{sunsetData}";
+
+            if (weatherBackgroundValue < 300)
+            {
+                this.BackgroundImage = Properties.Resources.thunderstormBackground;
+            }
+            else if (weatherBackgroundValue < 500 && weatherBackgroundValue > 300)
+            {
+                this.BackgroundImage = Properties.Resources.drizzleBackground;
+            }
+            else if (weatherBackgroundValue > 500 && weatherBackgroundValue < 600)
+            {
+                this.BackgroundImage = Properties.Resources.rainBackground;
+            }
+            else if (weatherBackgroundValue > 600 && weatherBackgroundValue < 800)
+            {
+                this.BackgroundImage = Properties.Resources.snowBackground;
+            }
+            else
+            {
+                this.BackgroundImage = Properties.Resources.cloudBackground;
+            }
 
             //Temporary (make for loop for the other days)
             switch (Form1.days[0].condition)

@@ -42,7 +42,9 @@ namespace XMLWeather
                 Form1.ExtractCurrent();
                 Form1.ExtractForecast();         
 
-                Form1.ChangeScreen(this, new CurrentScreen());         
+                Form1.ChangeScreen(this, new CurrentScreen());  
+                
+                
 
             }
             catch
